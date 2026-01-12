@@ -15,3 +15,9 @@ A página exibe o nome do aluno, a data e a identificação da instância para c
 ```bash
 sudo apt update -y
 sudo apt install -y apache2
+```
+
+## Observações relevantes
+- O comando `curl http://localhost` deve ser executado dentro de cada instância EC2
+- O Application Load Balancer não possui IP fixo, apenas DNS
+- As instâncias são verificadas automaticamente pelo health check do Target Group.
